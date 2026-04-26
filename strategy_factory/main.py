@@ -1,5 +1,5 @@
 """
-CLI entry point for the AI Strategy Factory.
+CLI entry point for the PASTANA.
 
 Provides commands for:
 - run: Execute full pipeline (research → synthesis → generation)
@@ -48,7 +48,7 @@ logger = logging.getLogger(__name__)
 
 class StrategyFactoryCLI:
     """
-    Main CLI class for the AI Strategy Factory.
+    Main CLI class for the PASTANA.
     """
 
     def __init__(self):
@@ -58,7 +58,7 @@ class StrategyFactoryCLI:
         """Create the argument parser with all commands."""
         parser = argparse.ArgumentParser(
             prog="strategy_factory",
-            description="AI Strategy Factory - Generate comprehensive AI strategy deliverables",
+            description="PASTANA - Generate comprehensive AI strategy deliverables",
             formatter_class=argparse.RawDescriptionHelpFormatter,
             epilog="""
 Examples:
@@ -219,7 +219,7 @@ Examples:
             logging.getLogger().setLevel(logging.DEBUG)
 
         print(f"\n{'='*60}")
-        print(f"AI Strategy Factory")
+        print(f"PASTANA")
         print(f"{'='*60}")
         print(f"Company: {company_name}")
         print(f"Mode: {args.mode}")
@@ -311,7 +311,7 @@ Examples:
         mode = company_input.mode
 
         print(f"\n{'='*60}")
-        print(f"AI Strategy Factory - Resume")
+        print(f"PASTANA - Resume")
         print(f"{'='*60}")
         print(f"Company: {company_name}")
         print(f"Mode: {mode.value}")
@@ -834,3 +834,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

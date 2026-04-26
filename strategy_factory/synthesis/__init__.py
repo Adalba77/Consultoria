@@ -1,5 +1,5 @@
 """
-Synthesis module for the AI Strategy Factory.
+Synthesis module for the PASTANA.
 
 This module handles Gemini API interactions for content synthesis,
 transforming research results into actionable deliverables using
@@ -15,3 +15,4 @@ __all__ = [
     "ContextBuilder",
     "SynthesisOrchestrator",
 ]
+

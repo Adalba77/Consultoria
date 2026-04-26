@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AI Strategy Factory generates comprehensive AI strategy deliverables for any company using Perplexity AI for research and Google Gemini for document synthesis.
+PASTANA generates comprehensive AI strategy deliverables for any company using Perplexity AI for research and Google Gemini for document synthesis.
 
 **What it produces:**
 - 15 strategic markdown documents

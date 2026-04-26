@@ -1,5 +1,5 @@
 """
-Research module for the AI Strategy Factory.
+Research module for the PASTANA.
 
 This module handles all Perplexity API interactions for company research,
 including:
@@ -23,3 +23,4 @@ __all__ = [
     "ResearchOrchestrator",
     "ResultProcessor",
 ]
+

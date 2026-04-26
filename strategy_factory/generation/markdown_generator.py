@@ -118,7 +118,7 @@ class MarkdownGenerator:
 title: "{name}"
 deliverable_id: "{deliverable_id}"
 generated_at: "{datetime.now().isoformat()}"
-generator: "AI Strategy Factory"
+generator: "PASTANA"
 ---"""
 
     def _clean_markdown(self, content: str) -> str:
@@ -306,3 +306,4 @@ def save_markdown_deliverables(
     """
     generator = MarkdownGenerator(output_dir=output_dir)
     return generator.save_all(company_slug, synthesis_output)
+

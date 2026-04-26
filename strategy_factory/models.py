@@ -1,5 +1,5 @@
 """
-Pydantic data models for the AI Strategy Factory.
+Pydantic data models for the PASTANA.
 
 These models define the structure for:
 - Company information and context
@@ -290,3 +290,4 @@ class GenerationResult(BaseModel):
     total_cost: float = 0.0
     generation_time: float = 0.0  # seconds
     errors: List[str] = Field(default_factory=list)
+

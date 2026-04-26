@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" alt="Platform">
 </p>
 
-<h1 align="center">AI Strategy Factory</h1>
+<h1 align="center">PASTANA</h1>
 
 <p align="center">
   <strong>Generate comprehensive AI strategy deliverables for any company in minutes, not weeks.</strong>
@@ -58,7 +58,7 @@ This tool is like having a consulting firm in a box. You type in a company name 
 |------|-----|-----------------|
 | A computer | Windows, Mac, or Linux all work | You probably have this |
 | Python installed | The programming language this runs on | 5 minutes |
-| Two free API keys | To use Perplexity and Gemini AI | 10 minutes |
+| Two API keys | To use Perplexity and Gemini AI | 10 minutes |
 | Claude Code (optional) | Makes everything 10x easier | 2 minutes |
 
 ### The Absolute Easiest Way (Using Claude Code)
@@ -95,11 +95,11 @@ Claude Code will:
 
 #### Step 2: Get Your API Keys (10 minutes)
 
-You need two free API keys:
+You need two API keys:
 
 **Perplexity API Key:**
 1. Go to [perplexity.ai](https://perplexity.ai)
-2. Create an account (free)
+2. Create an account
 3. Go to Settings → API
 4. Click "Generate API Key"
 5. Copy it somewhere safe (looks like `pplx-abc123...`)
@@ -211,8 +211,8 @@ Seriously, the hardest part is getting the API keys. Once those are set up, it's
 
 ```bash
 # Clone the repository
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # Create .env file with your API keys
 cp .env.example .env
@@ -240,15 +240,15 @@ docker-compose up -d --build
 If you have [Claude Code](https://claude.ai/code):
 
 ```
-Just say: "Clone and run the AI Strategy Factory for me"
+Just say: "Clone and run the PASTANA for me"
 ```
 
 ### Option 3: Manual Setup
 
 ```bash
 # Clone the repository
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # Run the setup script (works on Windows, macOS, Linux)
 python setup.py
@@ -402,8 +402,8 @@ sudo sh get-docker.sh
 sudo apt install docker-compose-plugin
 
 # 2. Clone the repository
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # 3. Set up environment
 cp .env.example .env
@@ -420,8 +420,8 @@ docker-compose logs -f ai-consult
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # 2. Create virtual environment
 python3 -m venv venv
@@ -643,3 +643,4 @@ MIT License - see [LICENSE](LICENSE) for details.
   <strong>Built with Claude Code</strong><br>
   <sub>The AI-powered development assistant</sub>
 </p>
+

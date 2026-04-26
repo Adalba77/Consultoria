@@ -49,8 +49,8 @@ docker compose version
 cd ~
 
 # Clonar projeto
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 ```
 
 ### Configurar variáveis de ambiente:
@@ -164,7 +164,7 @@ nginx -t
 systemctl restart nginx
 ```
 
-### Adicionar HTTPS (SSL gratuito):
+### Adicionar HTTPS (SSL configurado):
 ```bash
 # Instalar Certbot
 apt install certbot python3-certbot-nginx -y
@@ -225,7 +225,7 @@ nano /root/backup-ai-consult.sh
 Adicione:
 ```bash
 #!/bin/bash
-tar -czf /root/backups/ai-consult-$(date +%Y%m%d).tar.gz -C /root AI-CONSULT/output
+tar -czf /root/backups/ai-consult-$(date +%Y%m%d).tar.gz -C /root Consultoria/output
 find /root/backups -name "ai-consult-*.tar.gz" -mtime +7 -delete
 ```
 
@@ -277,7 +277,7 @@ docker compose up -d
 docker system prune -a
 
 # Limpar arquivos de output antigos
-cd ~/AI-CONSULT/output
+cd ~/Consultoria/output
 rm -rf empresa-antiga/
 ```
 
@@ -311,7 +311,7 @@ docker stats
 
 ```bash
 # Editar arquivo .env
-nano ~/AI-CONSULT/.env
+nano ~/Consultoria/.env
 
 # Altere:
 APP_USERNAME=seu-usuario-unico
@@ -323,7 +323,7 @@ python3 -c "import os; print(os.urandom(24).hex())"
 # Cole o resultado em SECRET_KEY no .env
 
 # Reinicie a aplicação
-cd ~/AI-CONSULT
+cd ~/Consultoria
 docker compose restart
 ```
 
@@ -378,5 +378,6 @@ systemctl start fail2ban
 
 Em caso de problemas:
 1. Verificar logs: `docker compose logs -f`
-2. Consultar issues no GitHub: https://github.com/inematds/AI-CONSULT/issues
+2. Consultar issues no GitHub: https://github.com/Adalba77/Consultoria/issues
 3. Revisar documentação: README.md e CLAUDE.md
+

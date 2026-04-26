@@ -1,5 +1,5 @@
 """
-Simple web server to view AI Strategy Factory deliverables.
+Simple web server to view PASTANA deliverables.
 
 Usage:
     python -m strategy_factory.server "stripe"
@@ -86,7 +86,7 @@ def generate_html_page(company_name: str, company_slug: str) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Strategy Factory - {company_name}</title>
+    <title>PASTANA - {company_name}</title>
     <style>
         :root {{
             --primary: #2563eb;
@@ -407,7 +407,7 @@ def generate_html_page(company_name: str, company_slug: str) -> str:
     <header>
         <div class="container">
             <div>
-                <h1>AI Strategy Factory</h1>
+                <h1>PASTANA</h1>
                 <p class="company">{company_name}</p>
             </div>
             <div class="stats">
@@ -642,7 +642,7 @@ def run_server(company_name: str, port: int = 8000, open_browser: bool = True):
 
     with socketserver.TCPServer(("", port), handler) as httpd:
         url = f"http://localhost:{port}"
-        print(f"\nAI Strategy Factory Viewer")
+        print(f"\nPASTANA Viewer")
         print(f"=" * 40)
         print(f"Company: {company_name}")
         print(f"Server running at: {url}")
@@ -660,7 +660,7 @@ def run_server(company_name: str, port: int = 8000, open_browser: bool = True):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="View AI Strategy Factory deliverables in your browser"
+        description="View PASTANA deliverables in your browser"
     )
     parser.add_argument(
         "company",
@@ -685,3 +685,4 @@ def main():
 
 if __name__ == "__main__":
     exit(main())
+

@@ -1,14 +1,14 @@
 # Relatório da Sessão de Desenvolvimento - AI Consult
 
 **Data:** 2 de Dezembro de 2025
-**Repositório:** https://github.com/inematds/AI-CONSULT
+**Repositório:** https://github.com/Adalba77/Consultoria
 **Desenvolvedor:** Claude Code + nmaldaner
 
 ---
 
 ## 📋 Resumo Executivo
 
-Sessão de desenvolvimento completa onde foram implementadas melhorias críticas no projeto AI Strategy Factory (renomeado para AI-CONSULT), incluindo:
+Sessão de desenvolvimento completa onde foram implementadas melhorias críticas no projeto PASTANA (renomeado para Consultoria), incluindo:
 
 1. ✅ **Infraestrutura Docker** completa para deploy em VPS
 2. ✅ **Localização para Português Brasileiro** (interface e documentos)
@@ -23,13 +23,13 @@ Sessão de desenvolvimento completa onde foram implementadas melhorias críticas
 ### 1. Configuração do Repositório GitHub
 
 **Ações:**
-- Configurado remote `inematds` apontando para `git@github.com:inematds/AI-CONSULT.git`
-- Atualizado de `ai-strategy-factory` para `AI-CONSULT`
+- Configurado remote `Adalba77` apontando para `git@github.com:Adalba77/Consultoria.git`
+- Atualizado de `ai-strategy-factory` para `Consultoria`
 - Configurado push via SSH
 
 **Commits:**
 - `ae9966c` - Add beginner-friendly guide with step-by-step instructions
-- `6179365` - Initial release: AI Strategy Factory v1.0
+- `6179365` - Initial release: PASTANA v1.0
 
 ---
 
@@ -229,7 +229,7 @@ def home():
 
 4. **Configurar Domínio (Opcional)**
    - Nginx como proxy reverso
-   - Certbot para SSL gratuito
+   - Certbot para SSL configurado
    - HTTPS configurado
 
 5. **Comandos Úteis**
@@ -368,7 +368,7 @@ db4d69f - Add simple login authentication system
 b397a40 - Fix output directory permissions and add deployment guide
 0eb55a9 - Add Docker support and Portuguese localization
 ae9966c - Add beginner-friendly guide with step-by-step instructions
-6179365 - Initial release: AI Strategy Factory v1.0
+6179365 - Initial release: PASTANA v1.0
 ```
 
 **Total:** 6 commits principais
@@ -447,7 +447,7 @@ ae9966c - Add beginner-friendly guide with step-by-step instructions
 - **Docker Compose** - Orquestração
 - **Node.js 18** - Para mermaid-cli
 - **Nginx** - Proxy reverso (opcional)
-- **Certbot** - SSL gratuito (opcional)
+- **Certbot** - SSL configurado (opcional)
 
 ### Ferramentas
 - **Git/GitHub** - Versionamento
@@ -538,8 +538,8 @@ sh get-docker.sh
 apt install docker-compose-plugin -y
 
 # 3. Clonar projeto
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # 4. Configurar .env
 cp .env.example .env
@@ -564,8 +564,8 @@ docker compose up -d
 
 ```bash
 # 1. Clonar
-git clone https://github.com/inematds/AI-CONSULT.git
-cd AI-CONSULT
+git clone https://github.com/Adalba77/Consultoria.git
+cd Consultoria
 
 # 2. Setup
 python3 -m venv venv
@@ -712,13 +712,13 @@ python3 -c "import os; print(os.urandom(24).hex())"
 ## 📞 Suporte e Contato
 
 ### Repositório
-https://github.com/inematds/AI-CONSULT
+https://github.com/Adalba77/Consultoria
 
 ### Issues
-https://github.com/inematds/AI-CONSULT/issues
+https://github.com/Adalba77/Consultoria/issues
 
 ### Email
-inematds@gmail.com
+contato@pastana.com.br
 
 ### Documentação
 - `README.md` - Guia geral
@@ -747,3 +747,4 @@ O projeto está agora pronto para ser usado em ambiente de produção, gerando e
 **Desenvolvido com ❤️ usando Claude Code**
 
 *Este relatório documenta todas as implementações, decisões técnicas e aprendizados da sessão de desenvolvimento de 2 de dezembro de 2025.*
+

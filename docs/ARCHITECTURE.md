@@ -1,6 +1,6 @@
-# AI Strategy Factory - Architecture
+# PASTANA - Architecture
 
-This document provides a detailed technical overview of the AI Strategy Factory system.
+This document provides a detailed technical overview of the PASTANA system.
 
 ## System Overview
 

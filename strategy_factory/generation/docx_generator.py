@@ -897,7 +897,7 @@ class DocxGenerator:
 
         # Consultant signature block
         doc.add_heading("Consultant", level=2)
-        doc.add_paragraph("Company: AI Strategy Factory")
+        doc.add_paragraph("Company: PASTANA")
         doc.add_paragraph("Name: _______________________________")
         doc.add_paragraph("Title: _______________________________")
         doc.add_paragraph("Signature: _______________________________")
@@ -932,3 +932,4 @@ def generate_statement_of_work(
     return generator.generate_statement_of_work(
         company_slug, company_input, research, synthesis
     )
+

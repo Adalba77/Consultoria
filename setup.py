@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup script for AI Strategy Factory.
+Setup script for PASTANA.
 
 This script helps set up the project on any platform.
 Run: python setup.py
@@ -27,7 +27,7 @@ def run_command(cmd, description):
 
 def main():
     print("=" * 60)
-    print("AI Strategy Factory - Setup")
+    print("PASTANA - Setup")
     print("=" * 60)
     print(f"\nPlatform: {platform.system()} ({platform.machine()})")
     print(f"Python: {sys.version}")
@@ -72,7 +72,7 @@ def main():
         print("  Done! Please edit .env with your API keys")
     elif not env_file.exists():
         print("\n Creating .env file...")
-        env_content = """# AI Strategy Factory - Environment Variables
+        env_content = """# PASTANA - Environment Variables
 PERPLEXITY_API_KEY=your-api-key-here
 GEMINI_API_KEY=your-api-key-here
 """
@@ -99,3 +99,4 @@ GEMINI_API_KEY=your-api-key-here
 
 if __name__ == "__main__":
     main()
+

@@ -1,5 +1,5 @@
 """
-Full-featured web application for AI Strategy Factory.
+Full-featured web application for PASTANA.
 
 Features:
 - Home page to enter company name and start analysis
@@ -38,6 +38,10 @@ from strategy_factory.progress_tracker import ProgressTracker, slugify
 
 load_dotenv()
 
+BRAND_NAME = "PASTANA"
+SERVICE_PRICE = "R$ 1.000,00"
+FOOTER_PHONE = os.getenv("PASTANA_PHONE", "telefone a definir")
+
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', os.urandom(24))
 
@@ -61,6 +65,13 @@ def login_required(f):
             return redirect(url_for('login'))
         return f(*args, **kwargs)
     return decorated_function
+
+
+@app.context_processor
+def inject_brand_context():
+    return {
+        "footer_phone": FOOTER_PHONE,
+    }
 
 
 def get_error_details(exception, phase="unknown"):
@@ -156,7 +167,7 @@ LOGIN_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - AI Strategy Factory</title>
+    <title>Login - PASTANA</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -268,7 +279,7 @@ LOGIN_TEMPLATE = """
 </head>
 <body>
     <div class="login-card">
-        <h1>🔐 AI Strategy Factory</h1>
+        <h1>🔐 PASTANA</h1>
         <p class="subtitle">Faça login para acessar o sistema</p>
 
         {% if error %}
@@ -290,7 +301,8 @@ LOGIN_TEMPLATE = """
         </form>
 
         <div class="footer">
-            AI Strategy Factory &copy; 2024
+            PASTANA &copy; 2024<br>
+            Telefone: {{ footer_phone|default('telefone a definir') }}
         </div>
     </div>
 </body>
@@ -303,7 +315,7 @@ BASE_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - AI Strategy Factory</title>
+    <title>{{ title }} - PASTANA</title>
     <style>
         :root {
             --primary: #2563eb;
@@ -976,6 +988,33 @@ BASE_TEMPLATE = """
             background: #047857;
         }
 
+        .price-banner {
+            background: #111827;
+            color: white;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .price-banner strong {
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+
+        footer.site-footer {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
         @media (max-width: 900px) {
             .results-layout {
                 grid-template-columns: 1fr;
@@ -991,7 +1030,7 @@ BASE_TEMPLATE = """
 <body>
     <header>
         <div class="container">
-            <a href="/"><h1>AI Strategy Factory</h1></a>
+            <a href="/"><h1>PASTANA</h1></a>
             <nav>
                 <a href="/">Nova Análise</a>
                 <a href="/logout" class="logout-btn">Sair</a>
@@ -1003,6 +1042,10 @@ BASE_TEMPLATE = """
         {{ content|safe }}
     </div>
 
+    <footer class="site-footer">
+        PASTANA &copy; 2024 | Telefone: {{ footer_phone|default('telefone a definir') }}
+    </footer>
+
     {{ scripts|safe }}
 </body>
 </html>
@@ -1010,6 +1053,11 @@ BASE_TEMPLATE = """
 
 HOME_CONTENT = """
 <div style="max-width: 700px; margin: 2rem auto;">
+    <div class="price-banner">
+        <span>Consultoria estratégica de IA PASTANA</span>
+        <strong>R$ 1.000,00</strong>
+    </div>
+
     <div class="card" style="margin-bottom: 1rem;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
             <h3 style="margin: 0;">Status das APIs</h3>
@@ -1509,7 +1557,7 @@ def login():
         else:
             from jinja2 import Template
             return render_template_string(
-                Template(LOGIN_TEMPLATE).render(error="Usuário ou senha incorretos")
+                Template(LOGIN_TEMPLATE).render(error="Usuário ou senha incorretos", footer_phone=FOOTER_PHONE)
             )
 
     # If already logged in, redirect to home
@@ -1517,7 +1565,7 @@ def login():
         return redirect(url_for('home'))
 
     from jinja2 import Template
-    return render_template_string(Template(LOGIN_TEMPLATE).render())
+    return render_template_string(Template(LOGIN_TEMPLATE).render(footer_phone=FOOTER_PHONE))
 
 
 @app.route('/logout')
@@ -2847,7 +2895,7 @@ def main():
     import argparse
     import socket
 
-    parser = argparse.ArgumentParser(description="AI Strategy Factory Web App")
+    parser = argparse.ArgumentParser(description="PASTANA Web App")
     parser.add_argument("--port", "-p", type=int, default=8888, help="Port to run on (default: 8888)")
     parser.add_argument("--no-browser", action="store_true", help="Don't open browser automatically")
     parser.add_argument("--host", default="0.0.0.0", help="Host to bind to (default: 0.0.0.0)")
@@ -2885,7 +2933,7 @@ def main():
     url = f"http://localhost:{port}"
 
     print("\n" + "=" * 50)
-    print("AI Strategy Factory Web App")
+    print("PASTANA Web App")
     print("=" * 50)
     print(f"Server running at: {url}")
     print("Press Ctrl+C to stop\n")
@@ -2902,3 +2950,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

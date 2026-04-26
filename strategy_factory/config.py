@@ -1,5 +1,5 @@
 """
-Configuration constants and settings for the AI Strategy Factory.
+Configuration constants and settings for the PASTANA.
 """
 
 from pathlib import Path
@@ -260,3 +260,4 @@ RETRY_CONFIG = {
     "max_delay": 60,
     "backoff_multiplier": 2
 }
+

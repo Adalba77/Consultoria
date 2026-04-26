@@ -1,5 +1,5 @@
 """
-Progress tracking and state management for the AI Strategy Factory.
+Progress tracking and state management for the PASTANA.
 
 Handles:
 - Creating and loading pipeline state from state.json
@@ -446,7 +446,7 @@ class ProgressTracker:
         summary = self.get_progress_summary()
 
         print(f"\n{'='*60}")
-        print(f"AI Strategy Factory - {summary['company_name']}")
+        print(f"PASTANA - {summary['company_name']}")
         print(f"{'='*60}")
         print(f"Current Phase: {summary['current_phase']}")
         print(f"\nPhase Status:")
@@ -499,3 +499,4 @@ def get_or_create_tracker(
         ProgressTracker instance
     """
     return ProgressTracker(company_name, company_input)
+
