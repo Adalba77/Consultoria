@@ -166,6 +166,9 @@ export default function LoginPage() {
                   </p>
                   <h2 className="mt-2 text-2xl font-bold text-gray-950">Digite o código</h2>
                   <p className="mt-2 text-sm text-gray-500">Enviamos um código para {phone}</p>
+                  <p className="mt-2 rounded-lg bg-purple-50 px-3 py-2 text-sm font-semibold text-purple-700">
+                    Código de teste: 123456
+                  </p>
 
                   <div className="mt-6">
                     <input
