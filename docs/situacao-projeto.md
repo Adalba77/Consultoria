@@ -107,7 +107,7 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 | Componente | Tecnologia | Status |
 |------------|------------|--------|
 | VPS | Hetzner (65.108.215.200) | ✅ Online |
-| Dominio | bela360.inema.online | ✅ Configurado |
+| Dominio | bela360.pastana.online | ✅ Configurado |
 | SSL | Let's Encrypt via Nginx | ✅ Ativo |
 | Proxy | Nginx | ✅ Funcionando |
 
@@ -270,9 +270,9 @@ Gamificacao (13)     [--------------------]  0%  ❌ Nao iniciado
 
 | Recurso | URL |
 |---------|-----|
-| Producao | https://bela360.inema.online |
-| API | https://bela360.inema.online/api |
-| Evolution | https://bela360.inema.online:8080 |
+| Producao | https://bela360.pastana.online |
+| API | https://bela360.pastana.online/api |
+| Evolution | https://bela360.pastana.online:8080 |
 
 ### Comandos Uteis
 

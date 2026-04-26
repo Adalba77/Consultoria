@@ -89,6 +89,13 @@ export default function LoginPage() {
           <p className="text-purple-100">Automacao para negocios de beleza</p>
         </div>
 
+        <div className="mb-5 rounded-xl border border-white/30 bg-white/95 px-5 py-4 text-center shadow-lg">
+          <p className="text-sm font-semibold uppercase tracking-wide text-purple-700">
+            PROMOÇÃO DO SISTEMA
+          </p>
+          <p className="mt-1 text-3xl font-bold text-gray-900">R$ 1.000,00</p>
+        </div>
+
         <div className="bg-white rounded-2xl shadow-xl p-8">
           {step === 'phone' ? (
             <form onSubmit={handleRequestOTP}>

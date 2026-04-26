@@ -2,7 +2,7 @@
 
 Guia passo a passo para colocar o bela360 em producao.
 
-**Dominio:** bela360.inema.online
+**Dominio:** bela360.pastana.online
 
 ---
 
@@ -63,7 +63,7 @@ ssh bela360@SEU_IP_DA_VPS
 
 ```bash
 cd ~
-git clone https://github.com/inematds/bela360.git
+git clone https://github.com/pastanatds/bela360.git
 cd bela360
 ```
 

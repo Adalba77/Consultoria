@@ -6,7 +6,7 @@
 
 O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes, barbearias, clinicas de estetica) com integracao WhatsApp. O MVP esta aproximadamente 95% completo, com implementacao backend dos Epics 1-10 do PRD.
 
-**Dominio de producao:** bela360.inema.online
+**Dominio de producao:** bela360.pastana.online
 
 ---
 
@@ -211,9 +211,9 @@ O projeto bela360 e uma plataforma de automacao para negocios de beleza (saloes,
 ## Configuracao de Producao
 
 ### Dominios Configurados:
-- **Frontend:** https://bela360.inema.online
-- **API:** https://api.bela360.inema.online
-- **Evolution API:** https://whatsapp.bela360.inema.online
+- **Frontend:** https://bela360.pastana.online
+- **API:** https://api.bela360.pastana.online
+- **Evolution API:** https://whatsapp.bela360.pastana.online
 
 ### Arquivos de Configuracao:
 - `.env` - Variaveis de ambiente (nao versionado)

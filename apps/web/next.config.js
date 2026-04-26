@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'standalone',
   transpilePackages: ['@bela360/shared'],
 
   // Disable x-powered-by header
