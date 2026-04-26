@@ -280,7 +280,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-2xl font-bold">Dashboard</h1>
           <p className="text-muted-foreground">
-            Bem-vindo ao bela360. Aqui está o resumo do seu dia.
+            Bem-vindo ao divina. Aqui está o resumo do seu dia.
           </p>
         </div>
         <div className="rounded-lg border border-red-200 bg-red-50 p-6">
@@ -306,7 +306,7 @@ export default function DashboardPage() {
     const data = prepareDashboardExport(stats);
     exportData(data, format, {
       filename: `dashboard-${new Date().toISOString().split('T')[0]}`,
-      title: 'Dashboard Bela360',
+      title: 'Dashboard Divina',
       subtitle: 'Resumo de métricas do negócio',
     });
   };
@@ -357,7 +357,7 @@ export default function DashboardPage() {
         <div>
           <h1 className="text-2xl font-bold">Dashboard</h1>
           <p className="text-muted-foreground">
-            Bem-vindo ao bela360. Aqui está o resumo do seu dia.
+            Bem-vindo ao divina. Aqui está o resumo do seu dia.
           </p>
         </div>
         <ExportButton onExport={handleExportDashboard} disabled={loading || !stats} />

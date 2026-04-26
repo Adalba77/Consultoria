@@ -63,7 +63,7 @@ export default function DashboardLayout({
           <Link href="/dashboard" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-bela-purple to-bela-pink" />
             <span className="text-xl font-bold bg-gradient-to-r from-bela-purple to-bela-pink bg-clip-text text-transparent">
-              bela360
+              divina
             </span>
           </Link>
           <button
@@ -115,17 +115,7 @@ export default function DashboardLayout({
         </header>
 
         {/* Page content */}
-        <main className="p-4 lg:p-6">
-          <div className="mb-6 rounded-lg bg-gray-900 px-6 py-4 text-white shadow-sm">
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-semibold uppercase tracking-wide">
-                PROMOÇÃO DO SISTEMA
-              </span>
-              <strong className="text-2xl">R$ 1.000,00</strong>
-            </div>
-          </div>
-          {children}
-        </main>
+        <main className="p-4 lg:p-6">{children}</main>
       </div>
     </div>
   );

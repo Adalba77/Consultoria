@@ -32,7 +32,7 @@ export default function DashboardLayout({
       {/* Sidebar */}
       <aside className="fixed inset-y-0 left-0 w-64 bg-white border-r border-gray-200">
         <div className="flex items-center h-16 px-6 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-purple-600">bela360</h1>
+          <h1 className="text-xl font-bold text-purple-600">divina</h1>
         </div>
         <nav className="p-4 space-y-1">
           {navigation.map((item) => {
@@ -75,17 +75,7 @@ export default function DashboardLayout({
             Sair
           </button>
         </header>
-        <main className="p-8">
-          <div className="mb-6 rounded-lg bg-gray-900 px-6 py-4 text-white shadow-sm">
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
-              <span className="text-sm font-semibold uppercase tracking-wide">
-                PROMOÇÃO DO SISTEMA
-              </span>
-              <strong className="text-2xl">R$ 1.000,00</strong>
-            </div>
-          </div>
-          {children}
-        </main>
+        <main className="p-8">{children}</main>
       </div>
     </div>
   );

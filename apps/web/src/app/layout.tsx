@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'bela360 - Automação para Negócios de Beleza',
+  title: 'divina - Automação para Negócios de Beleza',
   description:
     'Plataforma de automação completa para salões, barbearias e clínicas de estética',
   keywords: ['salão', 'barbearia', 'estética', 'agendamento', 'whatsapp', 'automação'],

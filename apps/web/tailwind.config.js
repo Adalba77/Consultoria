@@ -49,7 +49,7 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        // bela360 brand colors
+        // divina brand colors
         bela: {
           purple: '#7C3AED',
           pink: '#EC4899',
