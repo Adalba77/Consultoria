@@ -68,3 +68,4 @@ docker/nginx/ssl/*.crt
 
 # Debug
 .ai/
+.vercel
